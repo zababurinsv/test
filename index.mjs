@@ -18,12 +18,10 @@ app.post('/*',async (req, res) => {
     res.send({key:"value"});
 })
 
-let httpPort = 7684
-
-app.listen(httpPort, () => {
-    console.log(`HTTPS Server running on port 80-${httpPort}`);
-})
-
-// httpsServer.listen(httpsPort,() => {
-//     console.log(`HTTPS Server running on port 443-${httpsPort}`);
-// });
+const port = (process.env.PORT)
+    ? process.env.PORT
+    : 7684
+app.listen(port ,() => {
+    console.log('pid: ', process.pid)
+    console.log('listening on http://localhost:'+ port);
+});
