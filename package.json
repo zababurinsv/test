@@ -1,0 +1,39 @@
+{
+  "name": "@newkind/main",
+  "version": "0.1.0",
+  "description": "peer to peer connect",
+  "author": "Zababurin Sergey",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "workspaces": [
+    "src/github.com/OpenBazaar/openbazaar-go",
+    "src/github.com/zababurinsv/openbazaar-desktop",
+    "src/github.com/zababurinsv/tunnel-reverse",
+    "ddns",
+    "dist/market"
+  ],
+  "scripts": {
+    "~~~~~~workspaces~~~~~": "echo",
+    "start": "node index.mjs",
+    "~~~~~~~~~~~~~~~~~~~~~": "echo"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.5",
+    "axios": "^0.25.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-enqueue": "^1.0.0",
+    "minimist": "^1.2.5",
+    "public-ip": "^5.0.0",
+    "socket.io": "^4.4.1",
+    "stdrpc": "^1.3.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "devDependencies": {
+    "kill-port-process": "^3.0.1",
+    "redrun": "^9.0.1",
+    "rimraf": "^3.0.2"
+  }
+}
