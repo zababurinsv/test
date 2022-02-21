@@ -64,7 +64,7 @@
 <script type="module">
     console.log('document.domain', document.domain)
     try {
-        console.log('new url', new URL(document.domain))
+        console.log('new url', document.domain.split('.').slice(1).join('.'))
     } catch (e) {
         console.log('ERROR', e)
     }
